@@ -27,8 +27,9 @@ public enum Provincia {
 		public void setPoblacion(int poblacion) {
 			this.poblacion = poblacion;
 		}
-		public double calcularDensidad() {
-			double densidad=this.poblacion/this.superficie;
+		public float calcularDensidad() {
+			double densidadB=this.poblacion/this.superficie;
+			float densidad = (float)densidadB;
 			return densidad;
 		}
 		
