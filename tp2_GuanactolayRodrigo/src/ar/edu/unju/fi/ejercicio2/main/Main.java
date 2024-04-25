@@ -56,7 +56,7 @@ public class Main {
 		return opcion;
 	}
 	/*
-	 * AGREGAR UN ONJETO EFEMERIDE AL ARRAYLIST.
+	 * AGREGAR UN OBJETO EFEMERIDE AL ARRAYLIST.
 	 */
 	public static void agregarEfemeride() {
 		if (efemerides == null) {
@@ -75,7 +75,7 @@ public class Main {
 		
 	}
 	/*
-	 * AEGURA QUE EL USUARIO INGRESE UN NUMERO ENTERO PARA EL CODIGO
+	 * ASEGURA QUE EL USUARIO INGRESE UN NUMERO ENTERO PARA EL CODIGO
 	 */
 	public static int pedirCodigo() {
 		boolean correcto = false;

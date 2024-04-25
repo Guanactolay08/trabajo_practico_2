@@ -53,7 +53,7 @@ public class Efemeride {
 
 	@Override
 	public String toString() {
-		return "Efemeride [Codigo= " + codigo + ", Mes=" + mes + ", Dia= " + dia + "]"+ "\nDetalle: " + detalle ;
+		return "EFEMERIDE [Codigo= " + codigo + ", Mes=" + mes + ", Dia= " + dia + "]"+ "\nDETALLE: " + detalle ;
 	}
 	
 	
