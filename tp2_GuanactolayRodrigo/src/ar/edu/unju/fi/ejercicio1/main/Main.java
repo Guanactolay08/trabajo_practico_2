@@ -9,7 +9,6 @@ import ar.edu.unju.fi.ejercicio1.model.Producto;
 import ar.edu.unju.fi.ejercicio1.model.Producto.Categoria;
 import ar.edu.unju.fi.ejercicio1.model.Producto.OrigenFabricacion;
 
-
 public class Main {
 	private static Scanner sc;
 	private static List<Producto> productos;
@@ -113,7 +112,7 @@ public class Main {
 		return num;
 	}
 	/*
-	 * SOLICITA AL USUARIO QUE ELIJA UN VALOR DEL ENUMERADO ORIGEN DE FABRICACION.
+	 * SOLICITA Y DEVUELVE UN ENUMERADO ORIGEN DE FABRICACION SOLICITADO POR EL USUARIO
 	 */
 	public static OrigenFabricacion pedirOrigen() {
 		boolean correcto = false;
@@ -139,17 +138,11 @@ public class Main {
 				sc.next();
 				}
 		}while(correcto == false);
-		switch(num) {
-		case 1: origenF = origenF.ARGENTINA; break;
-		case 2: origenF = origenF.CHINA;break;
-		case 3: origenF = origenF.BRASIL;break;
-		case 4: origenF = origenF.URUGUAY;break;
-		default: System.out.println("INVALIDO."); break;
-		}
+		origenF = OrigenFabricacion.values()[num-1];
 		return origenF;
 	}
 	/*
-	 * SOLICITA Y DEVUEVE UN VALOR DE TIPO CATEGORIA SOLICITADO POR EL USUARIO.
+	 * SOLICITA Y DEVUEVE UN ENUMERADO CATEGORIA SOLICITADO POR EL USUARIO.
 	 */
 	public static Categoria pedirCategoria () {
 		boolean correcto = false;
@@ -175,13 +168,7 @@ public class Main {
 				sc.next();
 				}
 		}while(correcto == false);
-		switch(num) {
-		case 1: categoriaF = categoriaF.TELEFONIA; break;
-		case 2: categoriaF = categoriaF.INFORMATICA;break;
-		case 3: categoriaF = categoriaF.ELECTROHOGAR;break;
-		case 4: categoriaF = categoriaF.HERRAMIENTAS;break;
-		default: System.out.println("INVALIDO."); break;
-		}
+		categoriaF = Categoria.values()[num-1];
 		return categoriaF;	
 	}
 	/*
@@ -240,7 +227,4 @@ public class Main {
 		}
 		
 	}
-	
-	
-
 }
