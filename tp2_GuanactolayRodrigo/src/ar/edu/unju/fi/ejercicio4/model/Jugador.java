@@ -86,9 +86,9 @@ public class Jugador {
 
 	@Override
 	public String toString() {
-		return "Jugador [Nombre=" + nombre + ", Apellido=" + apellido + ", Fecha de Nacimiento=" + fechaNacimiento
-				+ ", Nacionalidad=" + nacionalidad + ", Estatura=" + estatura + ", Peso=" + peso + ", Posicion="
-				+ posicion + "]";
+		return "Jugador: " + nombre +" "+ apellido +"\nFecha de Nacimiento: " + fechaNacimiento
+				+ "\nEdad: "+calcularEdad()+"\nNacionalidad: " + nacionalidad + "\nEstatura: " + estatura + "\nPeso: " + peso + "\nPosicion: "
+				+ posicion+"\n==============================";
 	}
 	/*
 	 * METODO PARA CALCULAR LA EDAD, RETORNA UN VALOR ENTERO.
