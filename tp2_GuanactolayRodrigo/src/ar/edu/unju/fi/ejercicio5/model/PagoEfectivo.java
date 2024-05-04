@@ -9,14 +9,14 @@ public class PagoEfectivo implements Pago {
 	private LocalDate fechaPago;
 	@Override
 	public void realizarPago(double monto) {
-		// TODO Auto-generated method stub
-
+		this.montoPagado = this.montoPagado - this.montoPagado*0.1;
 	}
 
 	@Override
 	public void imprimirRecibo() {
-		// TODO Auto-generated method stub
-
+		System.out.println("=================================");
+		System.out.println("Fecha de pago: "+this.fechaPago+"\nMonto pagado $: "+this.montoPagado);
+		System.out.println("=================================");
 	}
 	public PagoEfectivo() {
 		// TODO Auto-generated constructor stub

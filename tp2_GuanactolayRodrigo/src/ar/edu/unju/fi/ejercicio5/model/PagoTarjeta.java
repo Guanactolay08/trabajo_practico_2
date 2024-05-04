@@ -11,14 +11,15 @@ public class PagoTarjeta implements Pago {
 	
 	@Override
 	public void realizarPago(double monto) {
-		// TODO Auto-generated method stub
-
+		this.montoPagado = this.montoPagado+this.montoPagado*0.15;
 	}
 
 	@Override
 	public void imprimirRecibo() {
-		// TODO Auto-generated method stub
-
+		System.out.println("=======================================");
+		System.out.println("Numero de tarjeta: "+this.numeroTarjeta+"\nFecha de pago: "+this.fechaPago);
+		System.out.println("Monto pagado: $"+this.montoPagado);
+		System.out.println("=======================================");
 	}
 	
 	public PagoTarjeta() {
